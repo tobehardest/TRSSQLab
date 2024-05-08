@@ -1,0 +1,20 @@
+前端：
+#安装依赖
+npm i  
+#启动项目   
+npm run serve  
+后端：
+# 安装虚拟环境（仅需在首次设置时执行）
+python -m venv venv
+# 激活虚拟环境
+windows：venv\Scripts\activate
+mac：source venv/bin/activate
+# 退出虚拟环境
+source venv/bin/deactivate
+# 安装依赖
+pip install -r requirements.txt
+#数据库迁移
+python manage.py makemigrations
+python manage.py migrate
+#启动项目
+python manage.py runserver 0.0.0.0:8000
